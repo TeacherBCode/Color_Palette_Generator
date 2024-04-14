@@ -1,0 +1,74 @@
+body{
+    margin: 0;
+    padding: 0;
+    height : 500px;
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+header{
+    box-sizing: border-box;
+    width : 550px;
+    padding:40px 10px 20px;
+    display:fixed;
+    display: grid;
+    grid-template-columns:50px auto auto;
+    gap: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#color-btn{
+    cursor: pointer;
+    font-size: 1rem;
+    border: 1px dashed ;
+    border-radius: 10px;
+}
+
+#color-btn:hover{
+    font-size: 1.1rem;
+}
+
+#color-btn:active{
+    transform: translateY(3px);
+}
+
+#scheme-mode{
+    font-size: 1.15rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#add-color,#add-hex{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+.colorBlock{
+    width: 110px;
+    height:300px;
+}
+
+.copy-btn{
+    margin:0;
+    padding:0;
+    border: none;
+    background-color: white;;
+    font-size: 1.05rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.copy-btn:hover{
+    background-color: rgb(235, 241, 245);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.copy-btn:active{
+    background-color: #d6ffd7;
+    transform: translateY(4px);
+}

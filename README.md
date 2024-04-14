@@ -1,2 +1,2 @@
-# Color_Picker
- Simple Color Picker Widget
+# Color_Palatte_Generator
+ Simple Color Palatte Generator
