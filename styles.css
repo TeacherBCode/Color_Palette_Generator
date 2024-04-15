@@ -61,7 +61,8 @@ main{
 .copy-btn{
     margin: 0 auto;
     padding:0;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 80px;
     border: none;
     background-color: white;
     font-size: 1.05rem;
