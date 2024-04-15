@@ -4,7 +4,6 @@ body{
     height : 500px;
     display : flex;
     flex-direction: column;
-    align-items: center;
     text-align: center;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -13,14 +12,16 @@ body{
 
 header{
     box-sizing: border-box;
-    width : 550px;
-    padding:40px 10px 20px;
-    display:fixed;
+    width : 360px;
+    margin: 0 auto;
+    padding:20px;
     display: grid;
-    grid-template-columns:50px auto auto;
+    grid-template-columns: 1fr;
     gap: 10px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
 }
+
+
 
 #color-btn{
     cursor: pointer;
@@ -42,24 +43,25 @@ header{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#add-color,#add-hex{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    }
+main{
+    margin: 0 auto;
+    width: 350px;
+}
 
 .colorBlock{
-    width: 110px;
-    height:300px;
+    margin: 0 auto;
+    margin-right: 20px;
+    width: 200px;
+    height:50px;
 }
 
 .copy-btn{
-    margin:0;
+    margin: 0 auto;
     padding:0;
+    display: flex;
     border: none;
-    background-color: white;;
+    background-color: white;
     font-size: 1.05rem;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    
 }
 
 .copy-btn:hover{
@@ -71,4 +73,37 @@ header{
 .copy-btn:active{
     background-color: #d6ffd7;
     transform: translateY(4px);
+}
+
+
+
+@media (min-width : 600px ){
+    header{
+        
+        grid-template-columns:50px auto auto;
+        width : 550px;
+    }
+
+
+    main{
+        margin: 0 auto;
+        width: 550px;
+    }
+
+    .copy-btn{
+        display:block; 
+    }
+
+    #add-color,#add-hex{
+        margin: 0 auto;
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        }
+        
+    .colorBlock{
+        margin-right: 0;
+        width: 110px;
+        height:300px;
+    }
+    
 }
